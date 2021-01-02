@@ -19,19 +19,10 @@ module.exports = {
   },
   plugins: [
     {
-      use: '@gridsome/vue-remark',
-      options: {
-        typeName: 'Post', // Required
-        baseDir: './content/posts', // Where .md files are located
-        pathPrefix: '/blog', // Add route prefix. Optional
-        template: './src/templates/Post.vue' // Optional
-      }
-    },
-    {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'BlogPost',
-        path: './content/blog/**/*.md',
+        typeName: 'Post',
+        path: './content/posts/**/*.md',
         remark: {
           // remark options
         }
