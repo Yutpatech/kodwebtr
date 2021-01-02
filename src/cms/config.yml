@@ -1,6 +1,6 @@
 backend:
-  name: yutpatech.github.io
-  repo: Yutpatech/yutpatech.github.io
+  name: Yutpatech
+  repo: Yutpatech/kodwebtr
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
