@@ -2,18 +2,32 @@
   <Layout>
     <div class="posts">
       <div class="post" v-for="post in $page.posts.edges" :key="post">
-        <g-link :to="post.node.path">
-          <b>{{ post.node.title }}</b>
+        <div class="post-body">
+          <time>{{ post.node.date }}</time>
+          <g-link :to="post.node.path">
+            <h3>{{ post.node.title }}</h3>
+          </g-link>
+          <img class="avatar" src="https://avatars1.githubusercontent.com/u/59116658?s=200&v=4" height="32" width="32"/>
+          <g-link :to="post.node.path">
+            {{ post.node.short }}
+          </g-link>
+        </div>
+        <g-link class="readmore" :to="post.node.path">
+          Devamını oku →
         </g-link>
-        <g-link :to="post.node.path">
-          <p>{{ post.node.short }}</p>
-        </g-link>
-        <img class="avatar" src="https://avatars1.githubusercontent.com/u/59116658?s=200&v=4" height="32" width="32"/>
       </div>
     </div>
   </Layout>
 </template>
-
+<script>
+export default {
+  data:{
+    return(){
+      month : ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık']
+    }
+  }
+}
+</script>
 <page-query>
 query Posts {
   posts: allPost {
@@ -23,6 +37,7 @@ query Posts {
         short
         path
         id
+        date(format: "dddd, DD MMMM YYYY", locale: "tr")
       }
     }
   }
@@ -36,17 +51,36 @@ query Posts {
   flex-direction: column;
 }
 .post{
+  display: flex;
+  flex-direction: column;
   border-bottom: solid 1px var(--grey);
   padding: 1rem 0;
+}
+.post-body{
+  display: flex;
+  flex-direction: column;
   color: var(--dark);
 }
-.post a{
+.post-body a{
   color: var(--dark);
+}
+.post h3{
+  font-size: 1.75rem;
+  line-height: 1;
+  margin: 0;
+}
+.post p{
+  font-size: 1rem;
+  line-height: 1.1rem;
 }
 .post:last-child{
   border-bottom: none;
 }
 .avatar{
   border-radius: 50%;
+  margin: .75rem 0;
+}
+.readmore{
+  color: var(--primary);
 }
 </style>

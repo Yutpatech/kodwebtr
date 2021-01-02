@@ -30,6 +30,7 @@ query {
   --dark: #1b262c;
   --blue: #0f4c75;
   --grey: #dedede;
+  --primary: #3282b8;
 }
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
