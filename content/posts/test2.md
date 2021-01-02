@@ -1,8 +1,7 @@
 ---
-title: Yapım Aşamasında 2!
-short: Yakında!
-date: 2021-01-02T09:30:25.241Z
+title: Neden statik blog?
+short: Hazır blog sistemlerindeki ağır yapılardan, özelleştirme kısıtlarından
+  kurtulabilmek için kod.web.tr'de statik blog deniyoruz.
+date: 2021-01-01T21:00:00.000Z
 ---
 Statik Blog yapısı hazırlanıyor.
-
-![kod.web.tr](/uploads/logo.svg "kod.web.tr")
