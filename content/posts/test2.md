@@ -1,5 +1,5 @@
 ---
-title: Yapım Aşamasında!
+title: Yapım Aşamasında 2!
 short: Yakında!
 date: 2021-01-02T09:30:25.241Z
 ---
