@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: Yutpatech/kodwebtr
-  branch: master
+  name: git-gateway
+  branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
