@@ -1,6 +1,8 @@
 ---
-title: test
-excerpt: test expert
+title: Yapım Aşamasında!
+excerpt: Yakında!
 date: 2021-01-02T09:30:25.241Z
 ---
-deneme içeriği
+Statik Blog yapısı hazırlanıyor.
+
+![kod.web.tr](/uploads/logo.svg "kod.web.tr")
