@@ -2,7 +2,8 @@
   <Layout>
     <h1>{{ $page.post.title }}</h1>
     <p class="intro">{{ $page.post.excerpt }}</p>
-    <VueRemarkContent />
+    <time>{{ $page.post.date }}</time>
+    <div>{{ $page.post.body}}</div>
   </Layout>
 </template>
 
