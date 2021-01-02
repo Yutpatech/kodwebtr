@@ -2,7 +2,10 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        <g-link to="/" class="brand">
+          <g-image src="~/logo.svg" width="32" height="32"/>
+          {{ $static.metadata.siteName }}
+        </g-link>
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
@@ -31,9 +34,10 @@ body {
 }
 a{
   text-decoration: none;
+  color: #1b262c;
 }
 .layout {
-  max-width: 768px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -45,9 +49,15 @@ a{
   align-items: center;
   margin-bottom: 20px;
   height: 80px;
+  color: #1b262c;
 }
 
 .nav__link {
   margin-left: 20px;
+}
+.brand{
+  display: flex;
+  align-items: center;
+  gap: .75rem;
 }
 </style>
