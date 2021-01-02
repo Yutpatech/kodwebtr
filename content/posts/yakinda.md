@@ -1,11 +1,12 @@
 ---
 title: Yakında
 excerpt: Buralar hep değerlenecek.
-date: 01.01.2021
-body: Deneme
+date: 2021-01-01T09:41:21.589Z
 ---
-
 # {{ $frontmatter.title }}
+
 > {{ $frontmatter.excerpt }}
 
 <AboutUs />
+
+Deneme
