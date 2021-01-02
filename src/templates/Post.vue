@@ -2,8 +2,7 @@
   <Layout>
     <h1>{{ $page.post.title }}</h1>
     <p class="intro">{{ $page.post.excerpt }}</p>
-    <time>{{ $page.post.date }}</time>
-    <div>{{ $page.post.body}}</div>
+    <div v-html="$page.post.content"></div>
   </Layout>
 </template>
 
@@ -13,6 +12,7 @@ query Post ($id: ID!) {
   post(id: $id) {
     title
     excerpt
+    content
   }
 }
 </page-query>

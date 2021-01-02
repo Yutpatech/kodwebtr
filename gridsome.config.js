@@ -34,5 +34,8 @@ module.exports = {
         publicPath: '/cms' 
       }
     } 
-  ]
+  ],
+  templates: {
+    Post: '/blog/:title',
+  }
 }
