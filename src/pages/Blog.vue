@@ -36,12 +36,12 @@ query Posts {
   flex-direction: column;
 }
 .post{
-  border-bottom: solid 1px #dedede;
+  border-bottom: solid 1px var(--grey);
   padding: 1rem 0;
-  color: #1b262c;
+  color: var(--dark);
 }
 .post a{
-  color: #1b262c;
+  color: var(--dark);
 }
 .post:last-child{
   border-bottom: none;

@@ -26,6 +26,11 @@ query {
 </static-query>
 
 <style>
+:root{
+  --dark: #1b262c;
+  --blue: #0f4c75;
+  --grey: #dedede;
+}
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
@@ -34,7 +39,7 @@ body {
 }
 a{
   text-decoration: none;
-  color: #1b262c;
+  color: var(--dark);
 }
 .layout {
   max-width: 1000px;
@@ -49,7 +54,7 @@ a{
   align-items: center;
   margin-bottom: 20px;
   height: 80px;
-  color: #1b262c;
+  color: var(--dark);
 }
 
 .nav__link {
