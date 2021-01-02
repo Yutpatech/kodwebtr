@@ -37,7 +37,7 @@ query Posts {
 }
 .post{
   border-bottom: solid 1px #dedede;
-  padding: 1rem;
+  padding: 1rem 0;
   color: #1b262c;
 }
 .post a{
