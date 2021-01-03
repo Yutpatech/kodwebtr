@@ -54,7 +54,7 @@ module.exports = {
   ],
   templates: {
     Post: '/blog/:title',
-    Tag: [
+    Category: [
       {
         path: '/blog/category/:title',
         componenent: '~/templates/Category.vue',
