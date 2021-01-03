@@ -25,6 +25,20 @@ module.exports = {
         path: './content/posts/**/*.md',
         remark: {
           // remark options
+        },
+        refs: {
+          authors: {
+            typeName: 'Author',
+            create: true
+          },
+          categories: {
+            typeName: 'Category',
+            create: true
+          },
+          tags: {
+            typeName: 'Tag',
+            create: true
+          },
         }
       }
     },
@@ -36,6 +50,6 @@ module.exports = {
     } 
   ],
   templates: {
-    Post: '/blog/:title',
+    Post: '/blog/:title'
   }
 }
