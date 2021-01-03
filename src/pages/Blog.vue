@@ -3,7 +3,7 @@
     <div class="posts">
       <div class="post" v-for="post in $page.posts.edges" :key="post">
         <div class="post-body">
-          <time>{{ post.node.date }}</time>
+          <time>{{ post.node.date }} ({{post.node.timeToRead}} dakika okundu)</time>
           <g-link :to="post.node.path">
             <h3>{{ post.node.title }}</h3>
           </g-link>
@@ -19,25 +19,18 @@
     </div>
   </Layout>
 </template>
-<script>
-export default {
-  data:{
-    return(){
-      month : ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık']
-    }
-  }
-}
-</script>
+
 <page-query>
 query Posts {
   posts: allPost {
     edges {
       node {
+        id
+        path
+        date(format: "dddd, DD MMMM YYYY", locale: "tr")
+        timeToRead
         title
         short
-        path
-        id
-        date(format: "dddd, DD MMMM YYYY", locale: "tr")
       }
     }
   }
