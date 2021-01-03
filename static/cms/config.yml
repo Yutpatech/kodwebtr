@@ -17,9 +17,9 @@ collections:
       - {label: "Short description", name: "short", widget: "string"}
       - {
           label: 'Post Category',
-          name: 'categories',
+          name: 'category',
           widget: 'relation',
-          collection: 'categories',
+          collection: 'category',
           searchFields: ['id, title'],
           valueField: 'id',
           displayFields: ['title'],

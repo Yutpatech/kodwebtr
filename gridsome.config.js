@@ -32,8 +32,7 @@ module.exports = {
             create: true
           },
           categories: {
-            typeName: 'Category',
-            create: true
+            typeName: 'Category'
           },
           tags: {
             typeName: 'Tag',
@@ -46,7 +45,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/categories/**/*.md',
-        typeName: 'Categories',
+        typeName: 'Category',
         refs: {
           posts: {
             typeName: 'Post',
