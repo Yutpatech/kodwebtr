@@ -23,9 +23,6 @@ module.exports = {
       options: {
         typeName: 'Post',
         path: './content/posts/**/*.md',
-        remark: {
-          // remark options
-        },
         refs: {
           Category: {
             typeName: 'Category'

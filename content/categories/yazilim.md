@@ -1,3 +1,4 @@
 ---
+id: yazilim
 title: Yazılım
 ---
