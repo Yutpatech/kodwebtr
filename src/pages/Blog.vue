@@ -15,8 +15,8 @@
         <g-link class="readmore" :to="post.node.path">
           Devamını oku →
         </g-link>
-        <div>
-          <span>Category: </span><button v-if="post.node.category != null">{{ post.node.category.title }}</button>
+        <div class="categories" v-if="post.node.category != null">
+          <span>Category: </span><a class="btn" :href="post.node.category.path">{{ post.node.category.title }}</a>
         </div>
       </div>
     </div>
@@ -35,6 +35,7 @@ query Posts {
         short
         category{
           title
+          path
         }
       }
     }
@@ -43,6 +44,18 @@ query Posts {
 </page-query>
 
 <style>
+.categories{
+  margin-top: .75rem;
+}
+.btn{
+  border: solid 1px var(--grey);
+  border-radius: 5px;
+  padding: .3rem .5rem .5rem;
+}
+.btn:hover{
+  background: var(--blue);
+  color: #ffffff;
+}
 .posts{
   width: 100%;
   display: flex;
