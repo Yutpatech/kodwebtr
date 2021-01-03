@@ -32,4 +32,4 @@ collections:
     create: true
     slug: '{{slug}}'
     fields:
-      - { label: 'Name', name: 'id', widget: 'string' }
+      - { label: 'Name', name: 'title', widget: 'string' }
