@@ -3,7 +3,7 @@
     <div class="posts">
       <div class="post" v-for="post in $page.posts.edges" :key="post">
         <div class="post-body">
-          <time>{{ post.node.date }} ({{post.node.timeToRead}} dakika okundu)</time>
+          <time>{{ post.node.date }}</time>
           <g-link :to="post.node.path">
             <h3>{{ post.node.title }}</h3>
           </g-link>
@@ -28,7 +28,6 @@ query Posts {
         id
         path
         date(format: "dddd, DD MMMM YYYY", locale: "tr")
-        timeToRead
         title
         short
       }
