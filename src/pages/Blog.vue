@@ -15,6 +15,9 @@
         <g-link class="readmore" :to="post.node.path">
           Devamını oku →
         </g-link>
+        <div>
+          <span>Category: </span><button v-if="post.node.category != null">{{ post.node.category.title }}</button>
+        </div>
       </div>
     </div>
   </Layout>
@@ -30,6 +33,9 @@ query Posts {
         date(format: "dddd, DD MMMM YYYY", locale: "tr")
         title
         short
+        category{
+          title
+        }
       }
     }
   }
