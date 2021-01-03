@@ -26,10 +26,10 @@ collections:
         }
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - name: 'categories'
-        label: 'Category'
-        folder: 'content/categories'
-        create: true
-        slug: '{{slug}}'
-        fields:
-          - { label: 'Name', name: 'id', widget: 'string' }
+  - name: 'categories'
+    label: 'Category'
+    folder: 'content/categories'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Name', name: 'id', widget: 'string' }
