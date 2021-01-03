@@ -24,7 +24,7 @@ module.exports = {
         typeName: 'Post',
         path: './content/posts/**/*.md',
         refs: {
-          Category: {
+          category: {
             typeName: 'Category'
           }
         }
