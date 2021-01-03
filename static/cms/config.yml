@@ -20,9 +20,9 @@ collections:
           name: 'category',
           widget: 'relation',
           collection: 'categories',
-          searchFields: ['id, title'],
+          searchFields: ['id'],
           valueField: 'id',
-          displayFields: ['title'],
+          displayFields: ['id'],
         }
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -32,4 +32,4 @@ collections:
         create: true
         slug: '{{slug}}'
         fields:
-          - { label: 'Name', name: 'title', widget: 'string' }
+          - { label: 'Name', name: 'id', widget: 'string' }
