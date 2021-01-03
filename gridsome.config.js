@@ -27,17 +27,9 @@ module.exports = {
           // remark options
         },
         refs: {
-          authors: {
-            typeName: 'Author',
-            create: true
-          },
-          categories: {
+          Category: {
             typeName: 'Category'
-          },
-          tags: {
-            typeName: 'Tag',
-            create: true
-          },
+          }
         }
       }
     },
