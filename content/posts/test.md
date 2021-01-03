@@ -1,6 +1,7 @@
 ---
 title: Yapım Aşamasında!
 short: Yakında!
+category: yazilim
 date: 2021-01-02T09:30:25.241Z
 ---
 Statik Blog yapısı hazırlanıyor.
