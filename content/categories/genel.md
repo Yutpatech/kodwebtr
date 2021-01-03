@@ -1,0 +1,4 @@
+---
+id: genel
+title: Genel
+---
