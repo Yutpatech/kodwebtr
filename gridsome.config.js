@@ -43,6 +43,18 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/categories/**/*.md',
+        typeName: 'Categories',
+        refs: {
+          posts: {
+            typeName: 'Post',
+          },
+        },
+      },
+    },
+    {
       use: 'gridsome-plugin-netlify-cms',
       options: {
         publicPath: '/cms' 
@@ -50,6 +62,12 @@ module.exports = {
     } 
   ],
   templates: {
-    Post: '/blog/:title'
+    Post: '/blog/:title',
+    Tag: [
+      {
+        path: '/blog/category/:title',
+        componenent: '~/templates/Category.vue',
+      },
+    ],
   }
 }
