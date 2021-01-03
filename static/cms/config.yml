@@ -16,13 +16,13 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Short description", name: "short", widget: "string"}
       - {
-          label: 'Category',
+          label: 'Post Category',
           name: 'categories',
-          widget: 'select',
-          multiple: false,
-          min: 1,
-          options: ['Development', 'UX', 'Design'],
-          default: ['Development'],
+          widget: 'relation',
+          collection: 'categories',
+          searchFields: ['id, title'],
+          valueField: 'id',
+          displayFields: ['title'],
         }
       - {
           label: 'Tags',
