@@ -20,9 +20,9 @@ collections:
           name: 'category',
           widget: 'relation',
           collection: 'categories',
-          searchFields: ['id'],
+          searchFields: ['id, title'],
           valueField: 'id',
-          displayFields: ['id'],
+          displayFields: ['title'],
         }
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
